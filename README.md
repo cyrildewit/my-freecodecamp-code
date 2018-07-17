@@ -49,6 +49,8 @@
 
 ### Build a Survey Form
 
+> Start date: 17-07-2018<!--; End date: xx-7-2018-->
+
 - [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 - [Source Code](responsive-web-design/survey-form)
 - [Codepen](https://codepen.io/cyrildewit/pen/yqJMRO)
