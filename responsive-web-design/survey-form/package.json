@@ -1,0 +1,32 @@
+{
+  "name": "perceptor",
+  "version": "1.0.0",
+  "description": "A repository for perceptor.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cyrildewit@bitbucket.org/cyrildewit/hijnebouw.git"
+  },
+  "author": "Cyril de Wit",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cyrildewit/hijnebouw#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "browser-sync": "^2.18.7",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-connect-php": "0.0.8",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-util": "^3.0.8",
+    "rucksack-css": "^0.9.1",
+    "bootstrap": "^4.0.0-beta.3"
+  }
+}
