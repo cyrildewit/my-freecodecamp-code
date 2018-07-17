@@ -49,9 +49,14 @@
 
 ### Build a Survey Form
 
+- [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+- [Source Code](responsive-web-design/survey-form)
+- [Codepen](https://codepen.io/cyrildewit/pen/yqJMRO)
+- Live Version
+
 <!-- I started this project with finding some inspiration on the web. After having a global idea of the  -->
 
-You can see the complete source code for this project [here](responsive-web-design/survey-form)!
+<!-- You can see the complete source code for this project [here](responsive-web-design/survey-form)! -->
 
 ## JavaScript Algorithms And Data Structures
 
