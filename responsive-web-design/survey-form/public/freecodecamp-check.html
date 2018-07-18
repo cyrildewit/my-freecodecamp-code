@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FCC Survey Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="survey">
+
+            <div class="survey-heading">
+                <h1 class="survey-heading__title" id="title">Survey Form</h1>
+                <p class="survey-heading__description" id="description">Let us know how we can improve freeCodeCamp!</p>
+            </div>
+
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name
+                        <span class="label-required">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                </div>
+
+                <!-- <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name
+                            <span class="label-required">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name
+                            <span class="label-required">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                </div> -->
+
+                <div class="form-group">
+                    <label for="email" id="email-label">Email Address
+                        <span class="label-required">*</span>
+                    </label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number" id="number-label">Age
+                        <span class="label-required">*</span>
+                    </label>
+                    <input type="number" class="form-control" id="number" placeholder="Age" min="1" max="150">
+                </div>
+
+                <div class="form-group">
+                    <label for="currentRole">Which option best describes your current role?</label>
+                    <select id="dropdown" class="form-control">
+                        <option selected>Select an option...</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentRole">How likely is that you would recommend freeCodeCamp to a friend?
+                        <span class="label-required">*</span>
+                    </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Definitely
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Maybe
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                        <label class="form-check-label" for="gridRadios3">
+                            Not sure
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentRole">What do you like most in FCC:</label>
+                    <select id="currentRole" class="form-control">
+                        <option selected>Select an option...</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentRole">Things that should be improved in the future (Check all that apply):</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="front-end-projects">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Front-end Projects
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="back-end-projects">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Back-end Projects
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="data-visualization">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Data Visualization
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="challenges">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Challenges
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="open-source-community">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Open Source Community
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="gitter-help-rooms">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Gitter help rooms
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="videos">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Videos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="city-meetups">
+                        <label class="form-check-label" for="defaultCheck1">
+                            City Meetups
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="wiki">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Wiki
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="forum">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Forum
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="additional-courses">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Additional Courses
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Any Comments or Suggestions?</label>
+                    <textarea class="form-control" id="comment" placeholder="Enter your comment here..." rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="survey-btn" id="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<style>
+    body {
+        font-family: 'Lato', sans-serif;
+        background-color: #F9F9F9;
+    }
+
+    .survey {
+        border-top: 6px solid darkgreen;
+        border-radius: 8px;
+        padding: 0 60px 80px 60px;
+        background-color: #FFFFFF;
+        /* max-width: 720px; */
+        /* margin: 0 auto; */
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .survey-heading {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .survey-heading__title {
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+    }
+
+    .survey-heading__description {
+        margin: 20px 0 0 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 2rem;
+    }
+
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .form-row>.col,
+    .form-row>[class*="col-"] {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .survey label {
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    .form-control {
+        font-family: 'Lato', sans-serif;
+        display: block;
+        width: 100%;
+        /* padding: .375rem .75rem; */
+        padding: 10px 14px;
+        font-size: .875rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4dab0;
+        border-radius: 2px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: darkgreen;
+        outline: 0;
+    }
+
+    .label-required {
+        color: red;
+    }
+
+    .survey-btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+        color: #fff;
+        background-color: darkgreen;
+    }
+
+    .survey-btn:hover {
+        background-color: rgb(17, 150, 17);
+    }
+</style>
+<!-- > .col,
+  > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+} -->
+
+
+<!-- 3FD1C4 -->
