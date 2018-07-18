@@ -47,14 +47,19 @@
 
 ## Responsive Web Design
 
-## Build a Tribute Page
-
-### Build a Survey Form
+### Build a Tribute Page
 
 * [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 * [Source Code](responsive-web-design/survey-form)
 * [Codepen](https://codepen.io/cyrildewit/pen/yqJMRO)
 * [Live Preview](https://codepen.io/cyrildewit/full/yqJMRO/)
+
+### Build a Survey Form
+
+* [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+* [Source Code](responsive-web-design/tribute-page)
+* [Codepen](https://codepen.io/cyrildewit/pen/MXaYva)
+* [Live Preview](https://codepen.io/cyrildewit/full/MXaYva/)
 
 _**Start date:** 17-07-2018_
 
