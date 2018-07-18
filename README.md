@@ -49,16 +49,14 @@
 
 ### Build a Survey Form
 
-> Start date: 17-07-2018<!--; End date: xx-7-2018-->
+_Start date: 17-07-2018<!--; End date: xx-07-2018-->_
 
-- [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
-- [Source Code](responsive-web-design/survey-form)
-- [Codepen](https://codepen.io/cyrildewit/pen/yqJMRO)
-- Live Version
+* [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+* [Source Code](responsive-web-design/survey-form)
+* [Codepen](https://codepen.io/cyrildewit/pen/yqJMRO)
+* [Live Preview](https://codepen.io/cyrildewit/full/yqJMRO/)
 
-<!-- I started this project with finding some inspiration on the web. After having a global idea of the  -->
-
-<!-- You can see the complete source code for this project [here](responsive-web-design/survey-form)! -->
+I started this project with writing down all the requirements. After I had a good idea of what is expected of me, I started out by sketching a few designs. In the end I chose the best design and wrote the HTML code. The HTML code of the form is inspired by Bootstrap. Finally, I styled the survey form.
 
 ## JavaScript Algorithms And Data Structures
 
