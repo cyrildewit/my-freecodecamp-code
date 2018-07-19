@@ -1,0 +1,23 @@
+// ========================================================================
+//
+// Name:            Clearfix
+// Description:     Simple clearfix mixin.
+// More info:       (https://css-tricks.com/snippets/css/clear-fix/)
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+
+// Mixins: Clearfix
+// ========================================================================
+
+// Clearfix mixin
+@mixin clearfix() {
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+  }

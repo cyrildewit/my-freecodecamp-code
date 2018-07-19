@@ -1,0 +1,34 @@
+// ========================================================================
+//
+// Name:            BEM (Block Element Modifier)
+// Description:     A set of SCSS mixins to bring BEM to your project.
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+
+// Mixins: BEM
+// ========================================================================
+
+// Block Mixin
+@mixin block($block-name) {
+    .#{$block-name} {
+        @content;
+    }
+}
+
+// Element Mixin
+@mixin element($element-name) {
+    &__#{$element-name} {
+        @content;
+    }
+}
+
+// Modifier Mixin
+@mixin modifier($modifier-name) {
+    &--#{$modifier-name} {
+        @content;
+    }
+}
