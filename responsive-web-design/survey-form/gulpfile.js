@@ -153,7 +153,7 @@ var config = {
     }
 };
 
-gulp.task('php', function() {
+gulp.task('php', function () {
     php.server({
         base: config.server.static.base,
         port: config.server.static.port,
@@ -161,16 +161,18 @@ gulp.task('php', function() {
     });
 });
 
-gulp.task('browser-sync', ['php'], function() {
+gulp.task('browser-sync', gulp.series('php', function (done) {
     browserSync.init({
         proxy: '127.0.0.1:' + config.server.static.port,
         port: config.server.static.port,
         open: true,
         notify: false
     });
-});
 
-gulp.task('reloadBrowserSync', function() {
+    done();
+}));
+
+gulp.task('reloadBrowserSync', function () {
     browserSync.reload();
 });
 
@@ -179,7 +181,7 @@ gulp.task('reloadBrowserSync', function() {
 // Cascading Style Sheets Tasks
 // ***********************************************
 
-gulp.task('build-css', function() {
+gulp.task('build-css', function (done) {
     gulp.src(configuration.styles.toCompile)
         .pipe(sourcemaps.init(configuration.sourcemaps.initOptions))
         .pipe(sass(configuration.styles.sass).on('error', sass.logError))
@@ -189,9 +191,11 @@ gulp.task('build-css', function() {
         .pipe(sourcemaps.write(configuration.sourcemaps.outputDirectory))
         .pipe(gulp.dest(configuration.styles.destination))
         .pipe(browserSync.stream());
+
+    done();
 });
 
-gulp.task('watch:build-css', function() {
+gulp.task('watch:build-css', function () {
     gulp.watch(configuration.styles.toScan, ['build-css']);
 });
 
@@ -200,7 +204,7 @@ gulp.task('watch:build-css', function() {
 // Watch Task
 // ***********************************************
 
-gulp.task('clean-assets', function() {
+gulp.task('clean-assets', function () {
     return del([
         configuration.environment.destination + 'assets/**/*'
     ]);
@@ -211,9 +215,11 @@ gulp.task('clean-assets', function() {
 // Watch Task
 // ***********************************************
 
-gulp.task('watch', function() {
+gulp.task('watch', function (done) {
     gulp.watch(configuration.styles.toScan, ['build-css']);
     gulp.watch(configuration.environment.destinationToScan, ['reloadBrowserSync']);
+
+    done();
 });
 
 
@@ -221,11 +227,9 @@ gulp.task('watch', function() {
 // Build Tasks
 // ***********************************************
 
-gulp.task('build', [
-    'build-css',
-]);
+gulp.task('build', gulp.series('build-css'));
 
-gulp.task('watch:build', function() {
+gulp.task('watch:build', function () {
     gulp.watch(configuration.styles.toScan, ['build-css']);
 });
 
@@ -234,8 +238,6 @@ gulp.task('watch:build', function() {
 // Default Task
 // ***********************************************
 
-gulp.task('default', [
-    'build',
-    'browser-sync',
-    'watch'
-]);
+gulp.task('default', gulp.series('build', 'browser-sync', 'watch', function (done) {
+    done();
+}));
