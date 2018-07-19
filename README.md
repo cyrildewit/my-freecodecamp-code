@@ -49,17 +49,17 @@
 
 ### Build a Tribute Page
 
-* [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
-* [Source Code](responsive-web-design/survey-form)
-* [Codepen](https://codepen.io/cyrildewit/pen/yqJMRO)
-* [Live Preview](https://codepen.io/cyrildewit/full/yqJMRO/)
+* [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
+* [Source Code](responsive-web-design/tribute-page)
+* [Codepen](https://codepen.io/cyrildewit/pen/MXaYva)
+* [Live Preview](https://codepen.io/cyrildewit/full/MXaYva/)
 
 ### Build a Survey Form
 
 * [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 * [Source Code](responsive-web-design/tribute-page)
-* [Codepen](https://codepen.io/cyrildewit/pen/MXaYva)
-* [Live Preview](https://codepen.io/cyrildewit/full/MXaYva/)
+* [Codepen](https://codepen.io/cyrildewit/pen/yqJMRO)
+* [Live Preview](https://codepen.io/cyrildewit/full/yqJMRO/)
 
 _**Start date:** 17-07-2018_ | _**End date:** 18-07-2018_
 
