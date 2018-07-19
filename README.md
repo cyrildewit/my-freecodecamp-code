@@ -11,7 +11,7 @@
 1. [Responsive Web Design](#responsive-web-design)
     * [Build a Tribute Page](#build-a-tribute-page)
     * [Build a Survey Form](#build-a-survey-form)
-    * Build a Product Landing Page
+    * [Build a Product Landing Page](#build-a-product-landing-page)
     * Build a Technical Documentation Page
     * Build a Personal Portfolio Page
 2. [JavaScript Algorithms And Data Structures](#responsive-web-design)
@@ -64,6 +64,15 @@
 _**Start date:** 17-07-2018_ | _**End date:** 18-07-2018_
 
 I started this project with writing down all the requirements. After I had a good idea of what is expected of me, I started out by sketching a few designs. In the end I chose the best design and wrote the HTML code. The HTML code of the form is inspired by Bootstrap. Finally, I styled the survey form.
+
+### Build a Product Landing Page
+
+* [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
+* [Source Code](responsive-web-design/product-landing-page)
+* [Codepen](https://codepen.io/cyrildewit/pen/xJEmYE)
+* [Live Preview](https://codepen.io/cyrildewit/full/xJEmYE/)
+
+_**Start date:** 19-07-2018_<!-- | _**End date:** 18-07-2018_-->
 
 ## JavaScript Algorithms And Data Structures
 
