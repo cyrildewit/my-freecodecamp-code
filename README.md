@@ -6,19 +6,14 @@
 
 <!-- This repository contains all the code  -->
 
-* [Official Project Information](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
-* [Source Code](responsive-web-design/product-landing-page)
-* [Codepen](https://codepen.io/cyrildewit/pen/xJEmYE)
-* [Live Preview](https://codepen.io/cyrildewit/full/xJEmYE/)
-
 ### Certification Projects
 
 1. [Responsive Web Design](responsive-web-design)
     * [x] Build a Tribute Page | [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) | [Demo](https://codepen.io/cyrildewit/full/yqJMRO/) | [Source Code](responsive-web-design/tribute-page)
     * [x] Build a Survey Form [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form) | [Demo](https://codepen.io/cyrildewit/full/yqJMRO/) | [Source Code](responsive-web-design/survey-form)
-    * [ ] Build a Product Landing Page
-    * [ ] Build a Technical Documentation Page
-    * [ ] Build a Personal Portfolio Page
+    * [ ] Build a Product Landing Page | [Requirement](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) | Demo | Source Code
+    * [ ] Build a Technical Documentation Page | Requirements | Demo | Source Code
+    * [ ] Build a Personal Portfolio Page | Requirements | Demo | Source Code
 2. [JavaScript Algorithms And Data Structures](#responsive-web-design)
     * Palindrome Checker
     * Roman Numeral Converter
