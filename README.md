@@ -44,17 +44,3 @@
     * [ ] Personal Library
     * [ ] Stock Price Checker
     * [ ] Anonymous Message Board
-
-## Responsive Web Design
-
-
-
-## JavaScript Algorithms And Data Structures
-
-## Front End Libraries
-
-## Data Visualization
-
-## Apis And Microservices
-
-## Information Security And Quality Assurance
