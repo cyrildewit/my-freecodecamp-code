@@ -9,9 +9,9 @@
 ### Certification Projects
 
 1. [Responsive Web Design](responsive-web-design)
-    * [x] Build a Tribute Page | [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) | [Demo](https://codepen.io/cyrildewit/full/yqJMRO/) | [Source Code](responsive-web-design/tribute-page)
-    * [x] Build a Survey Form [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form) | [Demo](https://codepen.io/cyrildewit/full/yqJMRO/) | [Source Code](responsive-web-design/survey-form)
-    * [ ] Build a Product Landing Page | [Requirement](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) | Demo | Source Code
+    * [x] [Build a Tribute Page](responsive-web-design/tribute-page) | [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) | [Demo](https://codepen.io/cyrildewit/full/yqJMRO/) | [Source Code](responsive-web-design/tribute-page)
+    * [x] [Build a Survey Form](responsive-web-design/survey-form) | [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form) | [Demo](https://codepen.io/cyrildewit/full/yqJMRO/) | [Source Code](responsive-web-design/survey-form)
+    * [ ] [Build a Product Landing Page](responsive-web-design/product-landing-page) | [Requirement](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) | Demo | [Source Code](responsive-web-design/product-landing-page)
     * [ ] Build a Technical Documentation Page | Requirements | Demo | Source Code
     * [ ] Build a Personal Portfolio Page | Requirements | Demo | Source Code
 2. [JavaScript Algorithms And Data Structures](javascript-algorithms-and-data-structures)
