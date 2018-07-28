@@ -4,7 +4,7 @@
 
 ## Overview
 
-<!-- This repository contains all the code  -->
+This repository contains the code of all my FreeCodeCamp projects. Each project will also be hosted on [codepen.io](https://codepen.io/cyrildewit/).
 
 ### Certification Projects
 
