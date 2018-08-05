@@ -12,8 +12,9 @@ This repository contains the code of all my FreeCodeCamp projects. Most of the p
     * [x] [Build a Tribute Page](responsive-web-design/tribute-page) | [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) | [Demo](https://codepen.io/cyrildewit/full/MXaYva/) | [Source Code](responsive-web-design/tribute-page)
     * [x] [Build a Survey Form](responsive-web-design/survey-form) | [Requirements](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form) | [Demo](https://codepen.io/cyrildewit/full/yqJMRO/) | [Source Code](responsive-web-design/survey-form)
     * [ ] [Build a Product Landing Page](responsive-web-design/product-landing-page) | [Requirement](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) | Demo | [Source Code](responsive-web-design/product-landing-page)
-    * [ ] Build a Technical Documentation Page | Requirements | Demo | Source Code
+    * [ ] Build a Technical Documentation Page | Requirements | Demo | [Source Code](responsive-web-design/product-landing-page)
     * [ ] Build a Personal Portfolio Page | Requirements | Demo | Source Code
+    * View certificate
 2. [JavaScript Algorithms And Data Structures](javascript-algorithms-and-data-structures)
     * [ ] Palindrome Checker
     * [ ] Roman Numeral Converter
