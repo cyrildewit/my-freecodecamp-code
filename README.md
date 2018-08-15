@@ -16,7 +16,7 @@ This repository contains the code of all my FreeCodeCamp projects. Most of the p
     * [ ] Build a Personal Portfolio Page | Requirements | Demo | Source Code
     * View certificate
 2. [JavaScript Algorithms And Data Structures](javascript-algorithms-and-data-structures)
-    * [ ] Palindrome Checker | Source Code
+    * [ ] Palindrome Checker | Requirements | Demo | Source Code
     * [ ] Roman Numeral Converter
     * [ ] Caesars Cipher
     * [ ] Telephone Number Validator
