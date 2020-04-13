@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Analyse van Algoritmen - Eigenschappen van sorteeralgoritmen</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="font-lato bg-gray-100">
+
+    <div class="container mx-auto px-4 py-8">
+
+        <div class="sm:flex -mx-4">
+
+            <div class="w-full sm:w-4/12 px-4 mb-4 sm:m-0">
+                <nav id="navbar" class="bg-white p-6 rounded shadow-xs border-blue-500 border-t-4">
+                    <header class="mb-4">
+                        <h1 class="font-poppins uppercase text-xl lg:text-3xl text-purple-600 font-bold">Documentation</h1>
+                    </header>
+
+                    <ul>
+                        <li><a href="#3.1_Belang_van_algoritme_analyse" class="nav-link block py-1 hover:text-blue-600">3.1 Belang van algoritme analyse</a></li>
+                        <li><a href="#3.2_Complexiteitsgraad" class="nav-link block py-1 hover:text-blue-600">3.2 Complexiteitsgraad</a></li>
+                        <li><a href="#3.3_Grote-o-notatie" class="nav-link block py-1 hover:text-blue-600">3.3 Grote-O-notatie</a></li>
+                        <li><a href="#3.2.1_Grote-O-analyse" class="nav-link block py-1 hover:text-blue-600">3.2.1 Grote-O-analyse</a></li>
+                        <li><a href="#3.2.2_Veelvoorkomende_comlexiteitsgraden" class="nav-link block py-1 hover:text-blue-600">3.2.2 Veelvoorkomende comlexiteitsgraden</a></li>
+                        <li><a href="#3.2.3_Notatie_beste-geval" class="nav-link block py-1 hover:text-blue-600">3.2.3 Notatie beste-geval</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main class="w-full sm:w-8/12 px-4" id="main-doc">
+                <div class="bg-white px-8 py-6 rounded shadow-xs border-blue-500 border-t-4">
+
+                    <h1 class="font-poppins text-gray-900 text-3xl font-bold mt-1 mb-2">3 Analyse van algoritmen</h1>
+
+                    <div class="flex items-center">
+                        <img src="img/16477999.png" class="rounded-full" style="max-height: 30px;">
+                        <p class="pl-2"><a href="#" class="text-blue-600">Cyril de Wit</a>, <em>6 februari 2020</em></p>
+                    </div>
+
+                    <section class="main-section" id="3.1_Belang_van_algoritme_analyse">
+                        <header class="font-poppins text-2xl text-gray-900 mt-5 mb-1">3.1 Belang van algoritme analyse</header>
+                        <article>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">Bij algoritme analyse zijn we geïnteresseerd in de
+                                karakteristieken van een
+                                algoritme. De bevindingen uit een analyse stellen ons in staat om de geschiktheid van een algoritme voor
+                                verschillende toepassingen te evalueren of te vergelijken met andere algoritmen voor dezelfde
+                                toepassing.
+                                Algoritme verschillen vaak nogal van elkaar, terwijl het doel van deze algoritmen hetzelfde is.</p>
+                        </article>
+                    </section>
+
+                    <section class="main-section" id="3.2_Complexiteitsgraad">
+                        <header class="font-poppins text-2xl text-gray-900 mt-5 mb-1">3.2 Complexiteitsgraad</header>
+                        <article>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">Algoritmen die op een computer worden uitgevoerd zijn in feite
+                                computaties.
+                                Een computatie is het proces van het berekenen van iets met behulp van wiskundige of logische methoden.
+                                Computaties maken gebruik van hulpbronnen van de computer. De meest fundamentele systeemhulpbronnen zijn
+                                een
+                                processor en het geheugen. Aangezien algoritmen verschillen van ontwerp verschillen deze behoeftes ook
+                                per
+                                algoritme. We zijn daarom in de informatica geïnteresseerd in deze zogenoemde kosten.</p>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">In principe kunnen we het gebruik van deze hulpbronnen goed
+                                meten door de
+                                tijdsduur op te nemen, maar omdat computers tamelijk van elkaar verschillen en er soms meerdere dingen
+                                tegelijk
+                                worden uitgevoerd zijn deze metingen niet praktisch voor vergelijkingen. Om deze reden is de
+                                complexiteitsgraad
+                                in het leven geroepen. De hoeveelheid middelen die nodig zijn voor het uitvoeren van een bepaald
+                                algoritme is de
+                                complexiteitsgraad. Over het algemeen hebben we het over de tijdscomplexiteit en de ruimtecomplexiteit.
+                                Waarvan
+                                de tijdscomplexiteit het meest wordt geanalyseerd. Doordat de invoer van een algoritme verschilt, zijn
+                                we vooral
+                                geïnteresseerd naar algemene schaalbaarheid van een algoritme. Hoe schalen deze hulpbronbehoeften
+                                naarmate de
+                                hoeveelheid invoergegevens stijgen.</p>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">De complexiteitsgraad kunnen we opdelen in twee gevallen:</p>
+                            <ul class="list-disc my-2 pl-8">
+                                <li><strong>slechtste-geval:</strong> het maximum aantal stappen dat kan worden uitgevoerd</li>
+                                <li><strong>beste-geval:</strong> het minimum aantal stappen dat moet worden uitgevoerd</li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section class="main-section" id="3.3_Grote-o-notatie">
+                        <header class="font-poppins text-2xl text-gray-900 mt-5 mb-1">3.3 Grote-O-notatie</header>
+                        <article>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">Voor het beschrijven van de complexiteitsgraad in het slechtste
+                                geval maken we gebruik van de
+                                grote-O-notatie. Om de grote-O-functie van een normale functie te krijgen laten we alleen de grootste
+                                term staan
+                                en halen we de constante factoren weg.</p>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">We hebben bijvoorbeeld een functie <code>f(n) = 4n3 + 2n2 + 3n + 1</code>
+                            </p>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">De grootste term in deze functie is <code>4n3</code> en als we vervolgens
+                                ook de constante 4 weglaten houden
+                                we de grote-O-functie over: <code>O(n) = n3</code>.</p>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">De reden waarom deze notatie interessant is, is omdat we
+                                functies hierdoor kunnen classificeren
+                                op hoe snel wiskundige functies groeien naarmate hun invoer groter wordt.</p>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">De volgende functies zien er bijvoorbeeld erg verschillend uit,
+                                maar groeien met ongeveer
+                                dezelfde snelheid.</p>
+                            <ul class="list-disc my-2 pl-8">
+                                <li><code>f(n) = 6n2 + 2</code></li>
+                                <li><code>f(n) = n2 + 1</code></li>
+                                <li><code>f(n) = 2n2 + 4</code></li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section class="main-section" id="3.2.1_Grote-O-analyse">
+                        <header class="font-poppins text-xl text-gray-900 mt-3 mb-1">3.2.1 Grote-O-analyse</header>
+                        <article>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">Voor het vinden van de grote-O-functie van een algoritme
+                                moeten er een aantal stappen
+                                worden doorlopen.</p>
+                            <ol>
+                                <li>Maak een lijst van alle basisbewerkingen in het algoritme</li>
+                                <li>Tel het aantal keren dat elke basisbewerking wordt uitgevoerd</li>
+                                <li>Som alle tellingen op op een vergelijking te krijgen in termen van n</li>
+                            </ol>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">Basisbewerkingen zijn bijvoorbeeld rekenkundige bewerkingen
+                                als delen (/), vermenigvuldigen
+                                (*), vergelijkingsoperaties (==, !=, <,>), toewijzingsoperaties (=) en statements als return.</p>
+
+
+                        </article>
+                    </section>
+
+                    <section class="main-section" id="3.2.2_Veelvoorkomende_comlexiteitsgraden">
+                        <header class="font-poppins text-xl text-gray-900 mt-3 mb-1">3.2.2 Veelvoorkomende comlexiteitsgraden</header>
+                        <article>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">Hieronder is een grafiek gegeven met de meest
+                                voorkomende grote-O-functies met daarbij een
+                                tabel.</p>
+                            <img src="img/complexity-chard.png" style="max-width: 70%;">
+                            <table class="w-full flex-row flex-no-wrap bg-white rounded my-5">
+                                <thead class="text-white">
+                                    <tr class="bg-blue-500 flex flex-col flex-no wrap table-row rounded-l-m rounded mb-0">
+                                        <th class="p-3 text-left border-b-none rounded-tl">Notatie</th>
+                                        <th class="p-3 text-left border-b-none">Type</th>
+                                        <th class="p-3 text-left border-b-none rounded-tr">Omschrijving</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border-grey-light border border-t-0 hover:bg-gray-100 p-3">O(1)</td>
+                                        <td class="border-grey-light border border-t-0 hover:bg-gray-100 p-3">Constant</td>
+                                        <td class="border-grey-light border border-t-0 hover:bg-gray-100 p-3">Blijft constant,
+                                            ongeacht de grootte van de gegevensset.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">O(log n)</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Logaritmisch</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Verhoogt met een constante.
+                                            Als n verdubbelt, neemt de uitvoeringstijd toe met een constante, kleiner dan n.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">O(&lt;n)</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Sublinear</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Presteert minder dan lineair
+                                            en beter dan logaritmische tijd.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">O(n)</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Linear</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Verhoogt in verhouding tot n.
+                                            Als n verdubbelt, verdubbelt ook de tijd om uit te voeren.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3" style="min-width: 100px">O(n
+                                            log n)</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">n log n</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Verhoogt met een veelvoud van
+                                            een constante.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">O(n<sup>2</sup>)</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Kwadratisch</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Verhoogt evenredig met het
+                                            product van n*n.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">O(c<sup>n</sup>)</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Exponentieel</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Verhoogt op basis van de
+                                            exponent n van een constante c.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">O(n!)</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Factorial</td>
+                                        <td class="border-grey-light border hover:bg-gray-100 p-3">Verhoogt evenredig met het
+                                            product van alle opgenomen nummers (bijv. 1 * 2 * 3 * 4 * 5 ...).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </article>
+                    </section>
+
+                    <section class="main-section" id="3.2.3_Notatie_beste-geval">
+                        <header class="font-poppins text-xl text-gray-900 mt-3 mb-1">3.2.3 Notatie beste-geval</header>
+                        <article>
+                            <p>Het slechtste-geval wordt genoteerd met de grote O, maar voor het noteren van het beste-geval
+                                maken we gebruik van de
+                                grote-omega notatie: Ω(f(n)).</p>
+                        </article>
+                    </section>
+
+                </div>
+
+                <footer class="flex justify-center py-4">
+                    <p class="text-sm pr-2" style="line-height: 20px;">Copyright &copy; 2020. In opdracht van</p><img
+                        src="img/logo_de_nieuwe_havo.png" style="max-height: 20px;">
+                </footer>
+            </main>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
