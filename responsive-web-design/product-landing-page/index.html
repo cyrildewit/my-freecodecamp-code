@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFC: Product Landing Page</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="font-lato bg-gray-100">
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header class="bg-white shadow relative z-40 border-red-600 border-t-4" id="header">
+        <div class="container mx-auto px-6">
+
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <div class="flex items-center">
+
+                        <a href="#" class="flex flex-row items-center pr-3">
+                            <!-- <h1 class="font-poppins uppercase text-xl lg:text-2xl text-red-600 font-bold">Razor</h1> -->
+                            <img src="data:image/png;base64,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" class="h-8" alt="Pether Logo" id="header-img">
+                        </a>
+
+                        <!-- <a href="#"
+                            class="flex flex-row items-center px-3 py-2 font-medium rounded-md hover:text-gray-600 focus:outline-none focus:text-gray-800">
+                            {{ $t('BrandDefault.nav.catalog') }}
+                        </a>
+
+                        <a href="#"
+                            class="flex flex-row items-center px-3 py-2 font-medium rounded-md hover:text-gray-600 focus:outline-none focus:text-gray-800">
+                            {{ $t('BrandDefault.nav.topics') }}
+                        </a> -->
+
+                    </div>
+                </div>
+
+                <nav class="flex items-center" id="nav-bar">
+
+                    <a href="#"
+                        class="nav-link flex flex-row items-center px-3 py-2 font-medium rounded-md hover:text-gray-600 focus:outline-none focus:text-gray-800">
+                        Introduction
+                    </a>
+
+                    <a href="#"
+                        class="nav-link flex flex-row items-center px-3 py-2 font-medium rounded-md hover:text-gray-600 focus:outline-none focus:text-gray-800">
+                        Features
+                    </a>
+
+                    <a href="#"
+                        class="nav-link flex flex-row items-center px-3 py-2 font-medium rounded-md hover:text-gray-600 focus:outline-none focus:text-gray-800">
+                        Pricing
+                    </a>
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white introduction-wrapper">
+        <div class="container">
+            //
+        </div>
+    </section>
+
+    <div class="container mx-auto px-4 py-8">
+
+        <div class="sm:flex -mx-4">
+
+            <div class="w-full sm:w-4/12 px-4 mb-4 sm:m-0">
+                <nav id="navbar" class="bg-white p-6 rounded shadow-xs border-blue-500 border-t-4">
+                    <header class="mb-4">
+                        <h1 class="font-poppins uppercase text-xl lg:text-3xl text-purple-600 font-bold">Documentation</h1>
+                    </header>
+
+                    <ul>
+                        <li><a href="#3.2.3_Notatie_beste-geval" class="nav-link block py-1 hover:text-blue-600">3.2.3 Notatie beste-geval</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main class="w-full sm:w-8/12 px-4" id="main-doc">
+                <div class="bg-white px-8 py-6 rounded shadow-xs border-blue-500 border-t-4">
+
+                    <h1 class="font-poppins text-gray-900 text-3xl font-bold mt-1 mb-2">3 Analyse van algoritmen</h1>
+
+                    <div class="flex items-center">
+                        <img src="img/16477999.png" class="rounded-full" style="max-height: 30px;">
+                        <p class="pl-2"><a href="#" class="text-blue-600">Cyril de Wit</a>, <em>6 februari 2020</em></p>
+                    </div>
+
+                    <section class="main-section" id="3.1_Belang_van_algoritme_analyse">
+                        <header class="font-poppins text-2xl text-gray-900 mt-5 mb-1">3.1 Belang van algoritme analyse</header>
+                        <article>
+                            <p class="leading-6 text-gray-800 mt-1 mb-2">Bij algoritme analyse zijn we geïnteresseerd in de
+                                karakteristieken van een
+                                algoritme. De bevindingen uit een analyse stellen ons in staat om de geschiktheid van een algoritme voor
+                                verschillende toepassingen te evalueren of te vergelijken met andere algoritmen voor dezelfde
+                                toepassing.
+                                Algoritme verschillen vaak nogal van elkaar, terwijl het doel van deze algoritmen hetzelfde is.</p>
+                        </article>
+                    </section>
+
+                    <section class="main-section" id="3.2.3_Notatie_beste-geval">
+                        <header class="font-poppins text-xl text-gray-900 mt-3 mb-1">3.2.3 Notatie beste-geval</header>
+                        <article>
+                            <p>Het slechtste-geval wordt genoteerd met de grote O, maar voor het noteren van het beste-geval
+                                maken we gebruik van de
+                                grote-omega notatie: Ω(f(n)).</p>
+                        </article>
+                    </section>
+
+                </div>
+
+                <footer class="flex justify-center py-4">
+                    <p class="text-sm pr-2" style="line-height: 20px;">Copyright &copy; 2020. In opdracht van</p><img
+                        src="img/logo_de_nieuwe_havo.png" style="max-height: 20px;">
+                </footer>
+            </main>
+
+        </div>
+
+
+    </div>
+
+    <style>
+        .introduction-wrapper {
+            background: url('https://source.unsplash.com/Sugqxd9LiBI');
+        }
+    </style>
+
+</body>
+</html>
