@@ -16,7 +16,7 @@
 </head>
 <body class="font-lato bg-gray-100">
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
 
     <header class="bg-white shadow relative z-40 border-red-600 border-t-4" id="header">
         <div class="container mx-auto px-6">
@@ -49,6 +49,11 @@
                         Pricing
                     </a>
 
+                    <a href="#sign_up"
+                        class="nav-link flex flex-row items-center px-3 py-2 font-medium rounded-md hover:text-gray-600 focus:outline-none focus:text-gray-800">
+                        Sign Up
+                    </a>
+
                 </nav>
 
             </div>
@@ -75,77 +80,46 @@
         </div>
     </section>
 
-    <section id="features"></section>
-    <section id="pricing"></section>
+    <section class="bg-white py-24 shadow-sm" id="features">
+        <div class="container mx-auto px-4">
 
-    <div class="container mx-auto px-4 py-8">
+            <div class="flex -mx-4">
+                <div class="w-1/3 px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path class="heroicon-ui"
+                        d="M6 14H4a2 2 0 01-2-2V4c0-1.1.9-2 2-2h12a2 2 0 012 2v2h2a2 2 0 012 2v13a1 1 0 01-1.7.7L16.58 18H8a2 2 0 01-2-2v-2zm0-2V8c0-1.1.9-2 2-2h8V4H4v8h2zm14-4H8v8h9a1 1 0 01.7.3l2.3 2.29V8z" />
+                    </svg>
 
-        <div class="sm:flex -mx-4">
-
-            <div class="w-full sm:w-4/12 px-4 mb-4 sm:m-0">
-                <nav id="navbar" class="bg-white p-6 rounded shadow-xs border-blue-500 border-t-4">
-                    <header class="mb-4">
-                        <h1 class="font-poppins uppercase text-xl lg:text-3xl text-purple-600 font-bold">Documentation</h1>
-                    </header>
-
-                    <ul>
-                        <li><a href="#3.2.3_Notatie_beste-geval" class="nav-link block py-1 hover:text-blue-600">3.2.3 Notatie beste-geval</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <main class="w-full sm:w-8/12 px-4" id="main-doc">
-                <div class="bg-white px-8 py-6 rounded shadow-xs border-blue-500 border-t-4">
-
-                    <h1 class="font-poppins text-gray-900 text-3xl font-bold mt-1 mb-2">3 Analyse van algoritmen</h1>
-
-                    <div class="flex items-center">
-                        <img src="img/16477999.png" class="rounded-full" style="max-height: 30px;">
-                        <p class="pl-2"><a href="#" class="text-blue-600">Cyril de Wit</a>, <em>6 februari 2020</em></p>
-                    </div>
-
-                    <section class="main-section" id="3.1_Belang_van_algoritme_analyse">
-                        <header class="font-poppins text-2xl text-gray-900 mt-5 mb-1">3.1 Belang van algoritme analyse</header>
-                        <article>
-                            <p class="leading-6 text-gray-800 mt-1 mb-2">Bij algoritme analyse zijn we geïnteresseerd in de
-                                karakteristieken van een
-                                algoritme. De bevindingen uit een analyse stellen ons in staat om de geschiktheid van een algoritme voor
-                                verschillende toepassingen te evalueren of te vergelijken met andere algoritmen voor dezelfde
-                                toepassing.
-                                Algoritme verschillen vaak nogal van elkaar, terwijl het doel van deze algoritmen hetzelfde is.</p>
-                        </article>
-                    </section>
-
-                    <section class="main-section" id="3.2.3_Notatie_beste-geval">
-                        <header class="font-poppins text-xl text-gray-900 mt-3 mb-1">3.2.3 Notatie beste-geval</header>
-                        <article>
-                            <p>Het slechtste-geval wordt genoteerd met de grote O, maar voor het noteren van het beste-geval
-                                maken we gebruik van de
-                                grote-omega notatie: Ω(f(n)).</p>
-                        </article>
-                    </section>
-
+                    <h2 class="font-poppins text-2xl text-center mb-2">Cool Feature</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae neque dolore repellendus mollitia consequatur.</p>
                 </div>
 
-                <footer class="flex justify-center py-4">
-                    <p class="text-sm pr-2" style="line-height: 20px;">Copyright &copy; 2020. In opdracht van</p><img
-                        src="img/logo_de_nieuwe_havo.png" style="max-height: 20px;">
-                </footer>
-            </main>
+                <div class="w-1/3 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                        <path class="heroicon-ui"
+                            d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm-3.54-4.46a1 1 0 011.42-1.42 3 3 0 004.24 0 1 1 0 011.42 1.42 5 5 0 01-7.08 0zM9 11a1 1 0 110-2 1 1 0 010 2zm6 0a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+
+                    <h2 class="font-poppins text-2xl text-center mb-2">Great Service</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae neque dolore repellendus mollitia consequatur.</p>
+                </div>
+
+                <div class="w-1/3 px-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path class="heroicon-ui"
+                        d="M9 10h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8c0-1.1.9-2 2-2h2V7a5 5 0 1110 0 1 1 0 01-2 0 3 3 0 00-6 0v3zm-4 2v8h14v-8H5zm7 2a1 1 0 011 1v2a1 1 0 01-2 0v-2a1 1 0 011-1z" />
+                    </svg>
+
+                    <h2 class="font-poppins text-2xl text-center mb-2">Super Secure</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae neque dolore repellendus mollitia consequatur.</p>
+                </div>
+            </div>
 
         </div>
+    </section>
 
-
-    </div>
-
-    <style>
-        .introduction-hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/yWwob8kwOCk');
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-    </style>
+    <section id="pricing"></section>
+    <section id="sign_up"></section>
 
 </body>
 </html>
