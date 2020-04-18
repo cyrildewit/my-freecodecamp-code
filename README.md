@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains the code of all my FreeCodeCamp projects. Most of the projects will also be hosted on [codepen.io](https://codepen.io/collection/DkBKVL/). This way you can see the final result without having to clone this repository.
+This repository contains the code of all my FreeCodeCamp projects. Most of the projects will be hosted on [codepen.io](https://codepen.io/collection/DkBKVL/). This way you can see the final result without having to clone this repository.
 
 ### Certification Projects
 
