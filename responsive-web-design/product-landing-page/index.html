@@ -16,8 +16,6 @@
 </head>
 <body class="font-lato bg-gray-100">
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
-
     <header class="bg-white shadow relative z-40 border-red-600 border-t-4" id="header">
         <div class="container mx-auto px-6">
 
@@ -121,10 +119,12 @@
         </div>
     </section>
 
-    <section class="py-24 border-t" id="pricing">
+    <section class="py-20 border-t" id="pricing">
         <div class="container mx-auto px-4">
 
-            <div class="flex flex-col md:flex-row items-center -mx-6">
+            <h1 class="font-poppins text-3xl font-medium text-center mb-12">Pricing</h1>
+
+            <div class="flex flex-col md:flex-row items-center -mx-4">
 
                 <div class="px-6 max-w-sm">
                     <div class="bg-white shadow text-sm rounded-lg">
@@ -257,18 +257,33 @@
         </div>
     </section>
 
-    <section class="bg-white py-24 border-t" id="sign_up">
+    <section class="bg-white py-24 border-t shadow-sm" id="sign_up">
         <div class="container mx-auto px-4">
-            <h1 class="font-poppins text-2xl font-medium">Sign Up</h1>
+            <h1 class="font-poppins text-3xl font-medium text-center mb-12">Sign Up</h1>
 
-            <div>
-                <form action="https://www.freecodecamp.com/email-submit" id="form">
-                    <input type="email" id="email" placeholder="Email">
-                    <button type="submit" id="submit">Sign me up!</button>
-                </form>
-            </div>
+            <form action="https://www.freecodecamp.com/email-submit" id="form" class="w-full max-w-sm mx-auto">
+                <div class="flex justify-between items-center">
+                    <div style="width: 60%">
+                        <input type="email" id="email" placeholder="Email" name="email"
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                    </div>
+
+                    <div>
+                        <input
+                            class="bg-red-600 hover:bg-red-300 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline ml-4"
+                            type="submit" id="submit"
+                            value="Sign me up!">
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
+
+    <footer class="flex justify-center py-4">
+        <p class="text-sm pr-2" style="line-height: 20px;">&copy; 2020 by Pether.</p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 </html>
