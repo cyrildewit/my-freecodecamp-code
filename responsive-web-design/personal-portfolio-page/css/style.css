@@ -1,0 +1,37 @@
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-primary-dark {
+    background-color: #323A3E;
+}
+
+.shadow-navbar {
+    box-shadow: 0px 0px 4px #151515;
+}
+
+.border-primary-green {
+    border-color: #2CC990;
+}
+
+.welcome-section-bg-image {
+    background-image: url(../img/man-tablet.jpg);
+}
+
+
+.welcome-section-bg-image-overlay {
+    background: #344146;
+    opacity: 0.75;
+}
+
+.text-shadow-one {
+    text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.border-t-3 {
+    border-top-width: 3px;
+}
