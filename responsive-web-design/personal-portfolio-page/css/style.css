@@ -34,6 +34,10 @@
     border-color: #2CC990;
 }
 
+.text-primary-green {
+    color: #2CC990;
+}
+
 .welcome-section-bg-image {
     background-image: url(../img/man-tablet.jpg);
 }
@@ -73,4 +77,65 @@
 
 .transition-project-tile-overlay {
     transition: background-color 0.4s 0s;
+}
+
+.bg-contact {
+    background: url("../img/mountains-airplain.jpg") no-repeat center center fixed;
+}
+
+.cw-nav-trigger {
+    position: relative;
+    float: right;
+    width: 54px;
+    height: 54px;
+    margin: 15.5px 0;
+    background-color: #555b5f;
+    border-radius: 4px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    transition: transform 0.5s;
+}
+.cw-nav-trigger .cw-nav-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 22px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.cw-nav-trigger .cw-nav-icon::before, .cw-nav-trigger .cw-nav-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: width 0.5s, top 0.3s, -webkit-transform 0.5s;
+    transition: transform 0.5s, width 0.5s, top 0.3s;
+    transition: transform 0.5s, width 0.5s, top 0.3s, -webkit-transform 0.5s;
+}
+
+.cw-nav-trigger .cw-nav-icon::before {
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.cw-nav-trigger .cw-nav-icon::after {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
 }
