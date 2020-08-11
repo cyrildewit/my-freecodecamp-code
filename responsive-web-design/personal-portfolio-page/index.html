@@ -14,53 +14,57 @@
 
 <body class="font-open-sans bg-gray-100">
 
-    <header class="bg-primary-dark shadow-navbar relative z-40" id="header">
-        <div class="container mx-auto px-6">
+    <header class="fixed top-0 w-full bg-primary-dark shadow-navbar z-30" id="header">
+        <div class="relative">
 
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <div class="flex items-center">
+            <div class="container mx-auto px-6">
 
-                        <a href="#" class="font-montserrat text-white font-bold flex flex-row items-center pr-3" style="font-size: 26px; font-weight: 600;">
-                           Cyril de Wit
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center">
+
+                            <a href="#" class="font-montserrat text-white font-bold flex flex-row items-center pr-3"
+                                style="font-size: 26px; font-weight: 600;">
+                                Cyril de Wit
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <nav class="flex items-center h-full" id="navbar">
+
+                        <a href="#welcome-section"
+                            class="flex flex-row items-center px-3 pt-1 font-montserrat text-white focus:outline-none border-b-4 border-primary-green h-full">
+                            About
                         </a>
 
-                    </div>
+                        <a href="#projects"
+                            class="flex flex-row items-center px-3 font-montserrat text-white focus:outline-none h-full">
+                            Projects
+                        </a>
+
+                        <a href="#contact"
+                            class="flex flex-row items-center px-3 font-montserrat text-white focus:outline-none h-full">
+                            Contact
+                        </a>
+
+                    </nav>
+
                 </div>
-
-                <nav class="flex items-center h-full" id="navbar">
-
-                    <a href="#welcome-section"
-                        class="flex flex-row items-center px-3 pt-1 font-montserrat text-white focus:outline-none border-b-4 border-primary-green h-full">
-                        About
-                    </a>
-
-                    <a href="#projects"
-                        class="flex flex-row items-center px-3 font-montserrat text-white focus:outline-none h-full">
-                        Projects
-                    </a>
-
-                    <a href="#contact"
-                        class="flex flex-row items-center px-3 font-montserrat text-white focus:outline-none h-full">
-                        Contact
-                    </a>
-
-                </nav>
-
             </div>
+
         </div>
     </header>
 
-    <section class="bg-white introduction-hero py-48 relative bg-cover bg-center welcome-section-bg-image" id="welcome-section">
-        <div class="container mx-auto px-4">
+    <section class="flex relative h-screen bg-white bg-cover bg-center welcome-section-bg-image" id="welcome-section">
+        <div class="container m-auto px-4">
 
             <div class="relative text-center text-white z-20">
                 <h1 class="font-montserrat font-medium text-5xl mb-1 text-shadow-one">Cyril de Wit</h1>
                 <h2 class="text-xl text-shadow-one">Full Stack Developer</h2>
                 <hr class="my-5 border-t-3 border-primary-green mx-auto" style="max-width: 110px;">
                 <div class="max-w-3xl mx-auto">
-                    <p class="text-lg text-shadow-one">Oprichter van het Leer Platform, kennis verworven door zelfstudie en web
-                        ontwikkelaar met een liefde voor mountainbiken.</p>
+                    <p class="text-lg text-shadow-one">Web development enthusiast and open source lover. Currently working remotely at <a href="https://www.closure.nl/">Closure</a>.</p>
                 </div>
             </div>
 
@@ -288,7 +292,7 @@
         <p class="text-sm pr-2" style="line-height: 20px;">&copy; 2020 by Pether.</p>
     </footer>
 
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 
