@@ -12,7 +12,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="font-open-sans bg-gray-100">
+<body class="font-open-sans">
 
     <header class="fixed top-0 w-full bg-primary-dark shadow-navbar z-30" id="header">
         <div class="relative">
@@ -73,11 +73,11 @@
         <div class="absolute inset-0 welcome-section-bg-image-overlay"></div>
     </section>
 
-    <section class="bg-white py-24 border-t" id="features">
+    <!-- <section class="bg-white  border-t">
         <div class="container mx-auto px-4">
 
             <div class="flex -mx-4">
-                <div class="w-1/3 px-4">
+                <div class="">
                     <svg class="h-16 w-16 text-red-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -118,156 +118,58 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
-    <section class="py-20 border-t" id="pricing">
+    <section class="py-24 bg-light-grey" id="projects">
         <div class="container mx-auto px-4">
+            <header class="max-w-3xl mx-auto mb-12 text-center">
+                <h1 class="font-montserrat font-medium text-3xl text-primary-dark mb-2">Projects</h1>
+                <p class="text-dark-grey">Over the years I have worked on several projects. Here is a selection of my recent work.</p>
+            </header>
 
-            <h1 class="font-poppins text-3xl font-medium text-center mb-12">Pricing</h1>
+            <div class="flex -mx-4">
+                <div class="w-1/2 px-4">
+                    <a class="project-tile relative block bg-white shadow-one overflow-hidden">
+                        <img class="max-w-full h-auto z-10" src="img/hijnebouw-thumbnail-2.png"
+                            alt="Portfolio Hijnebouw.nl thumbnail">
 
-            <div class="flex flex-col md:flex-row justify-center -mx-4">
-
-                <div class="px-6 max-w-sm">
-                    <div class="bg-white shadow text-sm rounded-lg">
-                        <div class="block px-8 py-6">
-                            <h1 class="font-poppins text-2xl font-medium text-center">Hobby</h1>
-                            <h2 class="text-lg font-medium text-center">FREE</h2>
-                            <p class="mt-4 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-
-                            <div class="mt-6">
-                                <div class="flex items-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">Unlimited Users</span>
-                                </div>
-
-                                <div class="flex items-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">2GB Storage</span>
-                                </div>
-
-                                <div class="flex items-center">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">1GB RAM</span>
-                                </div>
-                            </div>
-
-                            <a href="#" class="mt-6 text-lg font-semibold bg-red-600 w-full text-white rounded-lg
-                                            	px-4 py-2 block shadow-sm hover:bg-red-300 text-center">Select</a>
+                        <div class="absolute inset-y-0 w-3/4 p-6 bg-white project-tile-hover-content z-30">
+                            <h1 class="mb-2 font-montserrat font-semibold text-primary-dark text-2xl">Hijnebouw</h1>
+                            <p class="mb-2 text-sm">Hijnebouw is aannemer dat rond het dorp Oostzaanactief
+                                is. Met jaren ervaring helpt hij mensen met o.a. nieuwbouw, verbouw, renovatie en het
+                                plaatsen van deuren. Mijn functie was om voor hem een aantrekkelijke en informatieve website
+                                te bouwen.</p>
+                            <p class="mb-2 text-sm"><em>Momenteel in ontwikkeling</em></p>
+                            <p class="mb-2 text-sm"><u>www.hijnebouw.nl</u></p>
+                            <div class="absolute inset-x-0 bottom-0 h-2 bg-primary-green"></div>
                         </div>
-                    </div>
+
+                        <div class="absolute inset-0 bg-project-tile-overlay transition-project-tile-overlay z-20"></div>
+                    </a>
                 </div>
 
-                <div class="px-6 max-w-sm">
-                    <div class="bg-white shadow text-sm rounded-lg">
-                        <div class="block px-8 py-6">
-                            <h1 class="font-poppins text-2xl font-medium text-center">Professional</h1>
-                            <h2 class="text-lg font-medium text-center">&euro; 15 /mo</h2>
-                            <p class="mt-4 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="w-1/2 px-4">
+                    <a href="http://www.dierenkliniekhoorn.nl/" target="_blank" class="project-tile relative block bg-white shadow-one overflow-hidden">
+                        <img class="max-w-full h-auto z-10" src="img/dierenkliniekhoorn-thumbnail-2.png"
+                            alt="Portfolio Hijnebouw.nl thumbnail">
 
-                            <div class="mt-6">
-                                <div class="flex items-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">5 Users</span>
-                                </div>
-
-                                <div class="flex items-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">50GB Storage</span>
-                                </div>
-
-                                <div class="flex items-center">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">4GB RAM</span>
-                                </div>
-                            </div>
-
-                            <a href="#" class="mt-6 text-lg font-semibold bg-red-600 w-full text-white rounded-lg
-                                            	px-4 py-2 block shadow-sm hover:bg-red-300 text-center">Select</a>
+                        <div class="absolute inset-y-0 w-3/4 p-6 bg-white project-tile-hover-content z-30">
+                            <h1 class="mb-2 font-montserrat font-semibold text-primary-dark text-2xl">Dierenkliniek Hoorn</h1>
+                            <p class="mb-2 text-sm">Voor Dierenkliniek Hoorn heb ik een op maat gemaakte
+                                website gebouwd. Met de kijk van Annamarie Nibbelke en mijn ervaring zijn we samen tot een
+                                passend concept gekomen, die ik uiteindelijk ontwikkeld heb.</p>
+                            <p class="mb-2 text-sm"><u>www.dierenkliniekhoorn.nl</u></p>
+                            <div class="absolute inset-x-0 bottom-0 h-2 bg-primary-green"></div>
                         </div>
-                    </div>
+                        <div class="absolute inset-0 bg-project-tile-overlay transition-project-tile-overlay z-20"></div>
+                    </a>
                 </div>
-
-                <div class="px-6 max-w-sm">
-                    <div class="bg-white shadow text-sm rounded-lg">
-                        <div class="block px-8 py-6">
-                            <h1 class="font-poppins text-2xl font-medium text-center">Expert</h1>
-                            <h2 class="text-lg font-medium text-center">FREE</h2>
-                            <p class="mt-4 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-
-                            <div class="mt-6">
-                                <div class="flex items-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">Unlimited Users</span>
-                                </div>
-
-                                <div class="flex items-center mb-2">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">Unlimited Storage</span>
-                                </div>
-
-                                <div class="flex items-center">
-                                    <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-
-                                    <span class="ml-3 text-lg">64GB RAM</span>
-                                </div>
-                            </div>
-
-                            <a href="#" class="mt-6 text-lg font-semibold bg-red-600 w-full text-white rounded-lg
-                	px-4 py-2 block shadow-sm hover:bg-red-300 text-center">Select</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>
     </section>
 
-    <section class="bg-white py-24 border-t shadow-sm" id="sign_up">
+    <!-- <section class="bg-white py-24 border-t shadow-sm" id="sign_up">
         <div class="container mx-auto px-4">
             <h1 class="font-poppins text-3xl font-medium text-center mb-12">Sign Up</h1>
 
@@ -286,7 +188,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
 
     <footer class="flex justify-center py-4">
         <p class="text-sm pr-2" style="line-height: 20px;">&copy; 2020 by Pether.</p>
